@@ -1434,4 +1434,105 @@ ol {
 	.home-four-style .main-left-area {
 		padding-top: 250px;
 	}
+	/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .header-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .header-buttons .site-btn {
+    width: 100%;
+    margin: 5px 0;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  /* Hero section */
+  .hero-section .row {
+    flex-direction: column-reverse; /* Image above text on mobile */
+  }
+  
+  .hero-image img {
+    max-width: 200px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  
+  /* Text sizing */
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+  
+  /* Resume sections */
+  .resume-list li {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .resume-list p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Contact form */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+  
+  .site-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  /* Facts section */
+  .fact-box {
+    margin-bottom: 20px;
+  }
+  
+  /* General spacing */
+  .spad {
+    padding: 30px 0;
+  }
+  
+  /* Fix bullet points readability */
+  ul.resume-list p {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .hero-info ul li {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+}
 }
