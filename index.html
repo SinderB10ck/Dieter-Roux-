@@ -232,8 +232,13 @@
 					            <div class="fact-content">
 					                <div class="circle-progress">
 					                    <div class="circle-container">
-					                        <div class="circle-background"></div>
-					                        <div class="circle-fill" style="--percentage: 95;"></div>
+					                        <svg class="progress-circle" width="120" height="120" viewBox="0 0 120 120">
+					                            <!-- Background circle -->
+					                            <circle class="circle-bg" cx="60" cy="60" r="54" stroke-width="12" fill="none"/>
+					                            <!-- Progress circle (95%) -->
+					                            <circle class="circle-progress-bar" cx="60" cy="60" r="54" stroke-width="12" 
+					                                    fill="none" stroke-dasharray="339.292" stroke-dashoffset="16.9646"/>
+					                        </svg>
 					                        <div class="progress-info">
 					                            <h2>95%</h2>
 					                        </div>
